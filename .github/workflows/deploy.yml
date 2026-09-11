@@ -31,9 +31,13 @@ jobs:
         working-directory: adp/ArogyaLink-is-a-low-cost-telemedicine-platform-des---
         run: npm run build
 
+      - name: Verify Pages artifact
+        working-directory: adp/ArogyaLink-is-a-low-cost-telemedicine-platform-des---
+        run: test -f dist/index.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: adp/ArogyaLink-is-a-low-cost-telemedicine-platform-des---/dist/client
+          publish_dir: adp/ArogyaLink-is-a-low-cost-telemedicine-platform-des---/dist
