@@ -74,6 +74,7 @@ if (corsOrigins.length === 0) {
 }
 
 export default defineConfig(({ mode }) => ({
+	base: "/ArogyaLink/",
 	// Expose SITE_ID to import.meta.env (same as app id) for client deep links; keep VITE_ as default
 	envPrefix: ["VITE_", "SITE_"],
 
