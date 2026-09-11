@@ -159,6 +159,7 @@ The template includes:
 
 Configure header and footer once in `App.tsx`, applies to all pages:
 
+{% raw %}
 ```tsx
 // src/App.tsx
 const headerConfig = {
@@ -181,6 +182,7 @@ const router = createBrowserRouter([
   },
 ]);
 ```
+{% endraw %}
 
 Pages become simple content components:
 
