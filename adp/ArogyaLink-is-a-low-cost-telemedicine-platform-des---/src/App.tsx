@@ -35,7 +35,9 @@ const router = createBrowserRouter([
     ),
     children: routes,
   },
-]);
+], {
+  basename: import.meta.env.BASE_URL,
+});
 
 export default function App() {
   return (

@@ -89,7 +89,7 @@ export default function AboutPage() {
               className="rounded-2xl overflow-hidden shadow-xl"
             >
               <img
-                src="/airo-assets/images/pages/about/mission"
+                src={`${import.meta.env.BASE_URL}airo-assets/images/pages/about/mission`}
                 alt="Doctor consulting patient via telemedicine"
                 className="w-full h-96 object-cover"
               />

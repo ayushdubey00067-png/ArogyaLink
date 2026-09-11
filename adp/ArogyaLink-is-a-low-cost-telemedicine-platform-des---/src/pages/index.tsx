@@ -92,7 +92,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/airo-assets/images/pages/home/hero"
+            src={`${import.meta.env.BASE_URL}airo-assets/images/pages/home/hero`}
             alt="Rural Indian village community sitting together"
             className="w-full h-full object-cover object-center"
           />
@@ -243,7 +243,7 @@ export default function HomePage() {
               className="rounded-2xl overflow-hidden shadow-xl"
             >
               <img
-                src="/airo-assets/images/pages/home/kiosk"
+                src={`${import.meta.env.BASE_URL}airo-assets/images/pages/home/kiosk`}
                 alt="Village health kiosk"
                 className="w-full h-80 object-cover"
               />
@@ -264,7 +264,7 @@ export default function HomePage() {
               className="rounded-2xl overflow-hidden shadow-xl order-2 md:order-1"
             >
               <img
-                src="/airo-assets/images/pages/home/community"
+                src={`${import.meta.env.BASE_URL}airo-assets/images/pages/home/community`}
                 alt="Community health awareness"
                 className="w-full h-80 object-cover"
               />

@@ -107,7 +107,7 @@ export default function ContactPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/airo-assets/images/pages/contact/hero"
+            src={`${import.meta.env.BASE_URL}airo-assets/images/pages/contact/hero`}
             alt="ArogyaLink support team"
             className="w-full h-full object-cover"
           />
