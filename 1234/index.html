@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArogyaLink — Your First Step Towards Better Health</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ArogyaLink is a premium Indian healthcare platform offering smart symptom analysis with Ayurvedic & Allopathic guidance, and personalized yoga recommendations based on your body profile.">
+  <meta name="keywords" content="ArogyaLink, Indian healthcare, Symptom Checker, Yoga Advisor, Ayurvedic remedies, wellness portal">
+  <meta name="author" content="ArogyaLink Team">
+  
+  <!-- Google Fonts - Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/animations.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="preloader__spinner"></div>
+    <div class="preloader__text">ArogyaLink</div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__logo">
+        <div class="navbar__logo-icon">➕</div>
+        <div class="navbar__logo-text">Arogya<span>Link</span></div>
+      </a>
+      
+      <nav class="navbar__menu">
+        <a href="#home" class="navbar__link active" data-page="home">🏠 Home</a>
+        <a href="#dashboard" class="navbar__link" data-page="dashboard">📊 Dashboard</a>
+        <a href="#services" class="navbar__link" data-page="services">🩺 Services</a>
+        <a href="#contact" class="navbar__link" data-page="contact">📞 Contact</a>
+      </nav>
+      
+      <div class="navbar__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar__overlay"></div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-content">
+    
+    <!-- ── HOME PAGE ────────────────────────────────────────── -->
+    <section id="page-home" class="page active">
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero__bg">
+          <img src="assets/hero-banner.png" alt="ArogyaLink Healthcare Banner">
+        </div>
+        <div class="container">
+          <div class="hero__content reveal">
+            <div class="hero__badge">✨ Empowering Your Wellness Journey</div>
+            <h1 class="hero__title">Your First Step Towards Better Health</h1>
+            <p class="hero__subtitle">Analyze symptoms instantly using our smart checker, receive customized Ayurvedic remedies, and get personalized daily yoga plans tailored to your body profile.</p>
+            <div class="hero__actions">
+              <button class="btn btn--primary btn--lg" id="hero-check-symptoms">Check Symptoms 🔬</button>
+              <button class="btn btn--ghost btn--lg" id="hero-explore-yoga">Explore Yoga 🧘</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero__float-icons">
+          <div class="hero__float-icon">🌡️</div>
+          <div class="hero__float-icon">🧘</div>
+          <div class="hero__float-icon">💊</div>
+          <div class="hero__float-icon">🥗</div>
+          <div class="hero__float-icon">🤕</div>
+          <div class="hero__float-icon">🌿</div>
+        </div>
+        <div class="hero__blob"></div>
+      </div>
+
+      <!-- Quick Services / Features Section -->
+      <div class="features section">
+        <div class="container">
+          <div class="section__header reveal">
+            <span class="section__badge">Features</span>
+            <h2 class="section__title">Integrated Wellness Services</h2>
+            <p class="section__subtitle">Explore our core features designed to bridge the gap between traditional Indian medicine and modern lifestyle diagnosis.</p>
+          </div>
+          <div class="features__grid">
+            <div class="card card--feature reveal">
+              <div class="card__icon">🔬</div>
+              <h3 class="card__title">Symptom Checker</h3>
+              <p class="card__text">Quick wizard analyzing common ailments (fever, cold, headache) using dynamic follow-up questions and confidence scores.</p>
+            </div>
+            <div class="card card--feature reveal">
+              <div class="card__icon">🌿</div>
+              <h3 class="card__title">Ayurvedic Remedies</h3>
+              <p class="card__text">Get recommendations for age-old Indian home solutions like herbal teas, spice mixes, and natural therapies tailored for your ailment.</p>
+            </div>
+            <div class="card card--feature reveal">
+              <div class="card__icon">🧘</div>
+              <h3 class="card__title">Yoga Advisor</h3>
+              <p class="card__text">Personalized daily yoga and pranayama plan generated using your age, BMI, activity level, and health goals.</p>
+            </div>
+            <div class="card card--feature reveal">
+              <div class="card__icon">📊</div>
+              <h3 class="card__title">Patient Dashboard</h3>
+              <p class="card__text">Review recent diagnostics, follow up on activities, and keep track of your wellness history stored securely on your browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="stats section section--dark">
+        <div class="container">
+          <div class="stats__grid">
+            <div class="card card--stat reveal">
+              <div class="stat__number" data-counter data-target="15420" data-suffix="+">0</div>
+              <div class="stat__label">Diagnoses Run</div>
+            </div>
+            <div class="card card--stat reveal">
+              <div class="stat__number" data-counter data-target="98" data-suffix="%">0</div>
+              <div class="stat__label">Accuracy Rating</div>
+            </div>
+            <div class="card card--stat reveal">
+              <div class="stat__number" data-counter data-target="580" data-suffix="+">0</div>
+              <div class="stat__label">Active Yoga Plans</div>
+            </div>
+            <div class="card card--stat reveal">
+              <div class="stat__number" data-counter data-target="49" data-suffix="/50">0</div>
+              <div class="stat__label">State Coverage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose Us -->
+      <div class="why-choose section">
+        <div class="container">
+          <div class="section__header reveal">
+            <span class="section__badge">Why Choose Us</span>
+            <h2 class="section__title">Bridging Tradition & Science</h2>
+            <p class="section__subtitle">ArogyaLink leverages standard health assessment methodologies with time-tested Ayurvedic insights.</p>
+          </div>
+          <div class="why-choose__grid">
+            <div class="why-card reveal">
+              <div class="why-card__icon">🇮🇳</div>
+              <h3 class="why-card__title">Truly Indian</h3>
+              <p class="why-card__text">Crafted with specific focus on common Indian diets, seasonal challenges, and traditional wellness concepts.</p>
+            </div>
+            <div class="why-card reveal">
+              <div class="why-card__icon">🔒</div>
+              <h3 class="why-card__title">100% Private</h3>
+              <p class="why-card__text">Your health data is completely yours. All assessments are stored locally in your browser and never uploaded to any server.</p>
+            </div>
+            <div class="why-card reveal">
+              <div class="why-card__icon">🌱</div>
+              <h3 class="why-card__title">Natural Focus</h3>
+              <p class="why-card__text">We promote natural remedies and healthy lifestyle changes as a first line of defense before medication.</p>
+            </div>
+            <div class="why-card reveal">
+              <div class="why-card__icon">⚡</div>
+              <h3 class="why-card__title">Instant Results</h3>
+              <p class="why-card__text">No queues, no delays. Walk through simple multi-step wizards and get customized reports in seconds.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div class="testimonials section">
+        <div class="container">
+          <div class="section__header reveal">
+            <span class="section__badge">Testimonials</span>
+            <h2 class="section__title">Hear from Our Community</h2>
+            <p class="section__subtitle">Read how ArogyaLink is helping users across India lead a healthier, more balanced life.</p>
+          </div>
+          <div class="testimonials__grid">
+            <div class="testimonial-card reveal">
+              <span class="testimonial-card__quote">“</span>
+              <p class="testimonial-card__text">The symptom analyzer correctly predicted my seasonal flu and the Tulsi-Ginger remedy made my recovery so much smoother! I love the simplicity of the app.</p>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">RS</div>
+                <div>
+                  <div class="testimonial-card__name">Rohan Sharma</div>
+                  <div class="testimonial-card__role">Bengaluru, Karnataka</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card reveal">
+              <span class="testimonial-card__quote">“</span>
+              <p class="testimonial-card__text">I started the stress relief yoga plan, and the Balasana instructions are so detailed. Highly recommend ArogyaLink for anyone looking to make quick lifestyle changes.</p>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">PA</div>
+                <div>
+                  <div class="testimonial-card__name">Priya Adhikari</div>
+                  <div class="testimonial-card__role">Mumbai, Maharashtra</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-card reveal">
+              <span class="testimonial-card__quote">“</span>
+              <p class="testimonial-card__text">As a software developer sitting all day, the general fitness yoga recommendations have saved my back! Also, the privacy guarantee makes me trust this portal.</p>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar">NK</div>
+                <div>
+                  <div class="testimonial-card__name">Nishant Kumar</div>
+                  <div class="testimonial-card__role">Noida, Uttar Pradesh</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="cta section">
+        <div class="container">
+          <div class="cta__box reveal">
+            <h2 class="cta__title">Start Your Health Check Today</h2>
+            <p class="cta__subtitle">Empower your lifestyle with smart diagnostic tools and guided yoga advice.</p>
+            <div class="cta__actions">
+              <button class="btn btn--white btn--lg" id="cta-start">Begin Now ⚡</button>
+              <button class="btn btn--secondary btn--lg" style="color: white; border-color: white;" id="cta-contact">Get In Touch 📩</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ── DASHBOARD PAGE ────────────────────────────────────── -->
+    <section id="page-dashboard" class="page">
+      <div class="dashboard">
+        <div class="container" id="dashboard-content">
+          <!-- Dynamic rendering from dashboard.js -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- ── SERVICES PAGE ─────────────────────────────────────── -->
+    <section id="page-services" class="page">
+      <div class="services-page">
+        <div class="container">
+          <div class="services-page__header reveal">
+            <span class="section__badge">Diagnostics & Wellness</span>
+            <h2 class="services-page__title">ArogyaLink Services</h2>
+            <p class="section__subtitle" style="margin: 0 auto;">Select from our key health modules below to run assessments.</p>
+          </div>
+          
+          <!-- Service Selector -->
+          <div class="service-selector reveal">
+            <div class="service-selector__card active" data-service="symptom">
+              <div class="service-selector__icon">🔍</div>
+              <h3 class="service-selector__title">Smart Symptom Checker</h3>
+              <p class="service-selector__desc">Check symptoms, get a confidence score, and receive combined Ayurvedic remedies and Allopathic guidance.</p>
+            </div>
+            
+            <div class="service-selector__card" data-service="yoga">
+              <div class="service-selector__icon">🧘</div>
+              <h3 class="service-selector__title">Yoga Recommendation</h3>
+              <p class="service-selector__desc">Input your profile parameters, calculate your BMI, and get a tailored routine based on your fitness goals.</p>
+            </div>
+          </div>
+          
+          <!-- Symptom Checker Panel -->
+          <div id="symptom-analyzer" class="service-panel active">
+            <!-- Dynamic wizard steps loaded by symptomAnalyzer.js -->
+          </div>
+          
+          <!-- Yoga Advisor Panel -->
+          <div id="yoga-advisor" class="service-panel" style="display: none;">
+            <!-- Dynamic wizard steps loaded by yogaAdvisor.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ── CONTACT PAGE ──────────────────────────────────────── -->
+    <section id="page-contact" class="page">
+      <div class="contact-page">
+        <div class="container">
+          <div class="contact-page__header reveal">
+            <span class="section__badge">Support</span>
+            <h2 class="section__title">Get In Touch</h2>
+            <p class="section__subtitle" style="margin: 0 auto;">Have any queries or feedback? Drop us a message and our health advisors will reach out.</p>
+          </div>
+          
+          <div class="contact__grid">
+            <!-- Contact Form -->
+            <div class="contact__form-box reveal">
+              <h3 class="contact__form-title">Send Message</h3>
+              <p class="contact__form-subtitle">We would love to hear from you. All feedback helps improve ArogyaLink.</p>
+              
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name">Full Name</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="e.g. Rahul Singh">
+                  <div class="form-error" id="contact-name-error">⚠ Name error</div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="e.g. rahul@example.com">
+                  <div class="form-error" id="contact-email-error">⚠ Email error</div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-phone">Indian Mobile Number</label>
+                  <input type="tel" id="contact-phone" class="form-input" placeholder="e.g. 9876543210" maxlength="10">
+                  <div class="form-error" id="contact-phone-error">⚠ Phone error</div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-message" style="display: flex; justify-content: space-between;">
+                    <span>Your Message</span>
+                    <span id="contact-message-counter" style="font-size: var(--fs-xs); color: var(--text-muted);">0/1000</span>
+                  </label>
+                  <textarea id="contact-message" class="form-input" placeholder="Write your message here..." maxlength="1000"></textarea>
+                  <div class="form-error" id="contact-message-error">⚠ Message error</div>
+                </div>
+                
+                <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Inquiry 🚀</button>
+              </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact__info reveal">
+              <div class="contact__info-card">
+                <div class="contact__info-icon">📍</div>
+                <div>
+                  <h4 class="contact__info-title">Headquarters</h4>
+                  <p class="contact__info-text">ArogyaLink Labs, 4th Block Koramangala,<br>Bengaluru, Karnataka 560034</p>
+                </div>
+              </div>
+              
+              <div class="contact__info-card">
+                <div class="contact__info-icon">🏢</div>
+                <div>
+                  <h4 class="contact__info-title">Corporate Office</h4>
+                  <p class="contact__info-text">Supreme Business Park, Hiranandani Gardens Powai,<br>Mumbai, Maharashtra 400076</p>
+                </div>
+              </div>
+              
+              <div class="contact__info-card">
+                <div class="contact__info-icon">📞</div>
+                <div>
+                  <h4 class="contact__info-title">Phone Support</h4>
+                  <p class="contact__info-text">+91 80 4912 3456<br>Mon - Sat, 9:00 AM - 6:00 PM IST</p>
+                </div>
+              </div>
+              
+              <div class="contact__info-card">
+                <div class="contact__info-icon">✉️</div>
+                <div>
+                  <h4 class="contact__info-title">Email Address</h4>
+                  <p class="contact__info-text">support@arogyalink.in<br>info@arogyalink.in</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Location Map Illustration -->
+          <div class="contact__map reveal">
+            <div class="contact__map-placeholder">
+              <div class="contact__map-placeholder__icon">🗺️</div>
+              <div class="contact__map-placeholder__text">Interactive Indian Office Locations</div>
+              <p style="font-size: var(--fs-sm); color: var(--text-muted); margin-top: var(--sp-1);">ArogyaLink centers are active across major Indian technology hubs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Success Modal for Contact Form -->
+  <div id="contact-success-modal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal__icon">🎉</div>
+      <h3 class="modal__title">Inquiry Submitted</h3>
+      <p class="modal__text">Thank you for contacting ArogyaLink. Your inquiry has been stored locally and simulated as a successful server submission. One of our wellness consultants will review it shortly!</p>
+      <button class="btn btn--primary">Okay, Great! 👍</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <div class="footer__logo-icon">➕</div>
+            <div class="footer__logo-text">Arogya<span>Link</span></div>
+          </a>
+          <p class="footer__desc">Your first step towards better health. A unified digital health portal catering Ayurvedic suggestions, smart symptom checkers, and custom yoga routines.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <nav class="footer__links">
+            <a href="#home" class="footer__link" data-page="home">🏠 Home</a>
+            <a href="#dashboard" class="footer__link" data-page="dashboard">📊 Dashboard</a>
+            <a href="#services" class="footer__link" data-page="services">🩺 Services</a>
+            <a href="#contact" class="footer__link" data-page="contact">📞 Contact</a>
+          </nav>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <nav class="footer__links">
+            <a href="#services" class="footer__link" onclick="window.location.hash='services'; setTimeout(() => document.querySelector('[data-service=symptom]')?.click(), 200);">🔍 Symptom Checker</a>
+            <a href="#services" class="footer__link" onclick="window.location.hash='services'; setTimeout(() => document.querySelector('[data-service=yoga]')?.click(), 200);">🧘 Yoga Recommendation</a>
+            <a href="#dashboard" class="footer__link">📰 Health Articles</a>
+          </nav>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Legal</h4>
+          <nav class="footer__links">
+            <a href="#" class="footer__link">🔒 Privacy Policy</a>
+            <a href="#" class="footer__link">📄 Terms of Service</a>
+            <a href="#" class="footer__link">⚠️ Medical Disclaimer</a>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>&copy; 2026 ArogyaLink. All rights reserved. Made in India with ❤️.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="footer__social-link" aria-label="Twitter">🐦</a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">📸</a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">💼</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/symptomAnalyzer.js"></script>
+  <script src="js/yogaAdvisor.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
