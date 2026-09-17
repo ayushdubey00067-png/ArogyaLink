@@ -8,7 +8,7 @@ export default function YogaMedicinePage() {
       />
       <div className="w-full" style={{ height: 'calc(100vh - 64px)' }}>
         <iframe
-          src="/yoga-tool/index.html"
+          src={`${import.meta.env.BASE_URL}yoga-tool/index.html`}
           title="Yoga & Medicine Suggester"
           className="w-full h-full border-0"
           style={{ minHeight: '100vh' }}
