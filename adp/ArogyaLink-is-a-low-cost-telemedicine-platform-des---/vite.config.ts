@@ -8,8 +8,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  // GitHub Pages repository name
-  base: "/ArogyaLink/",
+  // Netlify serves from the site root; GitHub Pages serves from the repository name
+  base: process.env.NETLIFY ? "/" : "/ArogyaLink/",
 
   plugins: [react()],
 

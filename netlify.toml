@@ -1,0 +1,16 @@
+[build]
+  base = "adp/ArogyaLink-is-a-low-cost-telemedicine-platform-des---"
+  command = "npm install --include=dev && npm run build"
+  publish = "dist"
+
+# Client-side routing fallback for the React Router SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# The Yoga & Medicine page embeds the static yoga tool in an iframe on the same site
+[[headers]]
+  for = "/yoga-tool/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'self' https://*.netlify.com"
